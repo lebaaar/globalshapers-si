@@ -2,10 +2,13 @@
 	const year = new Date().getFullYear();
 </script>
 
-<!-- TODO -->
-<footer class="bg-[var(--gs-primary)] pb-20 pt-5 text-center px-6 leading-relaxed sm:pb-5">
-	<p class="text-xs text-[var(--gs-accent-light)]">
-		© {year} Global Shapers Ljubljana · Shapers Academy · Part of the World Economic Forum Hub
-		Network
-	</p>
+<footer class="bg-[var(--gs-primary)] px-6 pb-20 pt-6 sm:pb-6">
+	<div class="mx-auto flex max-w-4xl flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
+		<p class="text-xs text-blue-300/70 text-left sm:text-center">
+			© {year} Global Shapers Ljubljana · Shapers Academy · Part of the World Economic Forum
+		</p>
+		<p class="text-xs text-blue-300/50">
+			Made by <a href="https://lan.si" target="_blank" rel="noopener noreferrer" class="text-blue-300/80 underline-offset-2 transition-colors hover:text-blue-200 hover:underline text-left sm:text-center">Lan Lebar</a>
+		</p>
+	</div>
 </footer>

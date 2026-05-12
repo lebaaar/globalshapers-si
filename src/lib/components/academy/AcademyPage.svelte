@@ -432,7 +432,7 @@
 
 <div class="h-px bg-slate-200"></div>
 
-<section class="bg-[var(--gs-primary)] px-6 py-24 text-center">
+<section class="bg-[var(--gs-primary)] px-6 pt-24 pb-16 text-center">
 	<div use:inView class="mx-auto max-w-lg">
 		<h2 class="mb-3 text-3xl font-semibold tracking-tight text-white">
 			12 spots. One shot at the top 1%.
