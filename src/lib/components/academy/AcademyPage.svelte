@@ -69,7 +69,7 @@
 		{
 			title: 'Complete logistical support',
 			body: 'Pre-arrival housing help, legal registrations, and handling administrative hurdles so you can focus entirely on your career.',
-			tag: 'Avg. rent 300€–500€/mo'
+			tag: 'Average rent 300€–500€/mo'
 		},
 		{
 			title: 'No "lonely traveller" phase',
@@ -152,23 +152,18 @@
 		</div>
 
 		<h1 class="mb-5 text-4xl font-semibold leading-[1.15] tracking-tight text-[var(--gs-primary)] md:text-[2.75rem]">
-			The international career accelerator<br class="hidden md:block" />
-			for the <span class="text-[var(--gs-accent)]">top 1%</span>
+			The international career accelerator<br class="hidden md:block" /> for the <span class="text-[var(--gs-accent)]">top 1%</span>
 		</h1>
 
-		<p class="mx-auto mb-4 max-w-2xl text-[0.9375rem] leading-relaxed text-slate-600">
-			The program consists of an in-person 4-week skill sprint in marketing, sales, and business
-			strategy, led by a high-level industry expert, paired alongside a paid 6-month internship
-			abroad at a company where you can fast-track your career.
+		<p class="mx-auto mb-4 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
+			The program consists of an in-person 4-week skill sprint in marketing, sales, and business strategy, led by a high-level industry expert, paired alongside a paid 6-month internship abroad at a company where you can fast-track your career.
 		</p>
-		<p class="mx-auto mb-4 max-w-2xl text-[0.9375rem] leading-relaxed text-slate-600">
+		<p class="mx-auto mb-4 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
 			No unnecessary lectures and no fluff. With our industry expert guiding you from day one, you
-			step into a real business, tackle live company challenges, and hardwire your skills through
-			actual execution.
+			step into a real business, tackle live company challenges, and hardwire your skills through actual execution.
 		</p>
 		<p class="mx-auto mb-6 max-w-xl text-[0.9375rem] font-medium text-[var(--gs-primary)]">
-			Shapers Academy is not only here to help you develop and fast-track your career — it's here to
-			help you shape it.
+			Shapers Academy is not only here to help you develop and fast-track your career — it's here to help you shape it.
 		</p>
 
 		<a
@@ -176,7 +171,7 @@
 			href={FORM_URL}
 			target="_blank"
 			rel="noopener noreferrer"
-			class="inline-block rounded-lg bg-[var(--gs-accent)] px-9 py-[13px] text-[0.9375rem] font-semibold text-white no-underline transition-opacity duration-150 hover:opacity-90"
+			class="inline-block rounded-lg bg-[var(--gs-accent)] px-9 py-[13px] text-[0.9375rem] font-semibold text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(37,99,235,0.45)]"
 		>
 			Apply for a scholarship →
 		</a>
@@ -237,7 +232,7 @@
 <section class="px-6 py-20">
 	<div class="mx-auto max-w-4xl">
 		<div use:inView>
-			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">Quick facts</p>
+			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">Overview</p>
 			<h2 class="text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Programme at a glance</h2>
 			<p class="mt-3 mb-10 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
 				Only 12 scholarships are available. Why 12? Because we're only looking for the top 1% of applicants.
@@ -285,7 +280,7 @@
 			<div use:inView>
 				<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">Your base</p>
 				<h2 class="text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Ljubljana, Slovenia</h2>
-				<p class="mt-3 mb-7 max-w-2xl text-[0.9375rem] leading-relaxed text-slate-600">
+				<p class="mt-3 mb-7 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
 					Slovenia's capital sits at the centre of Europe — 2 hours from Vienna, Venice, and Zagreb.
 					Compact, walkable, and cosmopolitan, with a vibrant young professional scene and a cost of
 					living that lets your stipend go further.
@@ -354,16 +349,18 @@
 			</div>
 			<div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
 				{#each communityCards as card, i (card.title)}
-					<div use:inView={{ delay: i * 70 }} class="rounded-xl border border-slate-200 bg-white p-5 transition-[transform,box-shadow] duration-200 hover:-translate-y-[2px] hover:shadow-[0_6px_20px_rgba(0,0,0,0.07)]">
-						<p class="mb-2 text-sm font-semibold text-[var(--gs-primary)]">{card.title}</p>
-						<p class="text-[0.8125rem] leading-relaxed text-slate-600">{card.body}</p>
-						{#if card.tag}
-							<span
-								class="mt-3 inline-block rounded-full border border-green-100 bg-green-50 px-3 py-0.5 text-[0.6875rem] font-medium text-green-700"
-							>
-								{card.tag}
-							</span>
-						{/if}
+					<div use:inView={{ delay: i * 70 }}>
+						<div class="h-full rounded-xl border border-slate-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+							<p class="mb-2 text-sm font-semibold text-[var(--gs-primary)]">{card.title}</p>
+							<p class="text-[0.8125rem] leading-relaxed text-slate-600">{card.body}</p>
+							{#if card.tag}
+								<span
+									class="mt-3 inline-block rounded-full border border-green-100 bg-green-50 px-3 py-0.5 text-[0.6875rem] font-medium text-green-700"
+								>
+									{card.tag}
+								</span>
+							{/if}
+						</div>
 					</div>
 				{/each}
 			</div>
@@ -410,7 +407,7 @@
 			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">FAQ</p>
 			<h2 class="mb-10 text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Frequently asked questions</h2>
 		</div>
-		<div class="max-w-2xl">
+		<div class="max-w-3xl">
 			{#each faqs as faq, i (faq.q)}
 				<div use:inView={{ delay: i * 30 }} class="border-b border-slate-200 last:border-0">
 					<button
