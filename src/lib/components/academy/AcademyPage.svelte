@@ -152,7 +152,7 @@
 		</div>
 
 		<h1 class="mb-5 text-4xl font-semibold leading-[1.15] tracking-tight text-[var(--gs-primary)] md:text-[2.75rem]">
-			The international career accelerator<br class="hidden md:block" /> for the <span class="text-[var(--gs-accent)]">top 1%</span>
+			Shapers Academy – International career accelerator for the <span class="text-[var(--gs-accent)]">top 1%</span>
 		</h1>
 
 		<p class="mx-auto mb-4 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
@@ -201,7 +201,7 @@
 				<div class="h-full rounded-xl border border-green-200 bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
 					<p class="mb-4 text-xs font-semibold uppercase tracking-wide text-green-700">You will</p>
 					{#each willItems as item (item)}
-						<div class="flex gap-3 border-b border-slate-100 py-3 last:border-0 last:pb-0">
+						<div class="flex gap-3 py-3 last:border-0 last:pb-0">
 							<span class="mt-0.5 shrink-0 text-sm text-green-500">✓</span>
 							<p class="text-[0.8125rem] leading-relaxed text-slate-700">{item}</p>
 						</div>
@@ -212,7 +212,7 @@
 				<div class="h-full rounded-xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
 					<p class="mb-4 text-xs font-semibold uppercase tracking-wide text-slate-400">You won't</p>
 					{#each wontItems as item (item)}
-						<div class="flex gap-3 border-b border-slate-100 py-3 last:border-0 last:pb-0">
+						<div class="flex gap-3 py-3 last:border-0 last:pb-0">
 							<span class="mt-0.5 shrink-0 text-sm text-slate-300">✕</span>
 							<p class="text-[0.8125rem] leading-relaxed text-slate-500">{item}</p>
 						</div>
@@ -401,11 +401,10 @@
 	</div>
 </section>
 
-<section class="px-6 py-20">
+<section class="px-6 py-16">
 	<div class="mx-auto max-w-4xl">
 		<div use:inView>
-			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">FAQ</p>
-			<h2 class="mb-10 text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Frequently asked questions</h2>
+			<h2 class="mb-8 text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Frequently asked questions</h2>
 		</div>
 		<div class="max-w-3xl">
 			{#each faqs as faq, i (faq.q)}
