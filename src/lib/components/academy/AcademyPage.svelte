@@ -42,7 +42,7 @@
 		{
 			n: '1',
 			title: 'The initial application',
-			body: 'Fill out a quick online form to confirm your eligibility — country, age, and availability.',
+			body: 'Fill out a quick online form to confirm your eligibility: country, age, and availability.',
 			final: false
 		},
 		{
@@ -54,12 +54,12 @@
 		{
 			n: '3',
 			title: 'The vibe check',
-			body: "A quick, relaxed chat with our team. We already know you have the skills — now we just want to meet the human behind them and make sure the program is a genuine fit.",
+			body: "A quick, relaxed chat with our team. We already know you have the skills, so now we just want to meet the human behind them and make sure the program is a genuine fit.",
 			final: false
 		},
 		{
 			n: '★',
-			title: 'The match — company interview',
+			title: 'The match: company interview',
 			body: "Meet your potential host company. At this stage it's about finding the right mutual fit. Nail this, and you've officially claimed one of the 12 spots.",
 			final: true
 		}
@@ -68,23 +68,19 @@
 	const communityCards = [
 		{
 			title: 'Complete logistical support',
-			body: 'Pre-arrival housing help, legal registrations, and handling administrative hurdles so you can focus entirely on your career.',
-			tag: 'Average rent 300€–500€/mo'
+			body: 'Pre-arrival housing help, legal registrations, and handling administrative hurdles so you can focus entirely on your career.'
 		},
 		{
 			title: 'No "lonely traveller" phase',
-			body: "From day one, you're plugged into an instant network of high-achieving, like-minded young leaders.",
-			tag: null
+			body: "From day one, you're plugged into an instant network of high-achieving, like-minded young leaders."
 		},
 		{
 			title: 'Full community perks',
-			body: 'Direct mentorship from industry experts, specialised monthly workshops, and invite-only networking events.',
-			tag: null
+			body: 'Direct mentorship from industry experts, specialised monthly workshops, and invite-only networking events.'
 		},
 		{
 			title: 'Local buddy system',
-			body: 'A local buddy from our institute to help you navigate and prosper in your new city and professional environment.',
-			tag: null
+			body: 'A local buddy from our institute to help you navigate and prosper in your new city and professional environment.'
 		}
 	];
 
@@ -94,44 +90,44 @@
 			a: 'No. The 12 spots are fully funded scholarships.'
 		},
 		{
-			q: 'What is the monthly stipend?',
-			a: 'The financial support is designed to fully cover your day-to-day living costs in Ljubljana — rent, groceries, and more. Exact figures are shared with accepted participants.'
+			q: 'Will the financial support I receive actually cover my living expenses?',
+			a: 'Yes. The financial support provided during your 6-month internship is designed to cover your day-to-day living costs (rent, groceries, etc.) and more.'
 		},
 		{
-			q: 'Will the financial support cover my living expenses?',
-			a: 'Yes. The financial support during the 6-month internship is designed to cover day-to-day living costs (rent, groceries, etc.) and more.'
+			q: 'Does the Academy provide me with housing?',
+			a: "No. Our Institute does not own dorms (yet*), but we will 100% help you sort out the living situation prior to your arrival, if you're selected."
 		},
 		{
-			q: 'Does the Academy provide housing?',
-			a: 'No. The Institute does not own dorms (yet), but will 100% help you sort out the living situation prior to your arrival if selected. Average rent in Ljubljana is 300€ – 500€/month for a room in a shared flat.'
-		},
-		{
-			q: 'Which regions can apply?',
-			a: 'Europe, USA, Canada, United Kingdom, Singapore.'
+			q: 'Which regions can apply for Shapers Academy?',
+			a: 'Europe, USA, Canada, United Kingdom.'
 		},
 		{
 			q: 'Do I need a visa?',
-			a: 'Not if you can travel freely within Europe without a visa. If applying from the USA, UK, Canada, or Singapore, our team will guide you through visa and legal requirements once officially selected.'
+			a: 'Not if you are an EU citizen or can travel freely across the EU. If you are applying from the USA, UK, Canada, or Singapore, our team will guide you through the necessary visa and legal requirements once you are officially selected.'
 		},
 		{
-			q: "Can I apply if I'm over 30?",
-			a: 'No, in most cases — however exceptions can be made for exceptional applicants.'
+			q: 'Is a university degree required to apply?',
+			a: 'No, a university degree is not required. We firmly believe in equal opportunity for all, no matter your age or financial status. Whether you are in university, on a gap year, or pursuing another path, you are encouraged to apply. Since there are only 12 scholarships available, final selection will be highly competitive and based on the overall merit of your application.'
 		},
 		{
-			q: 'Is prior experience in Marketing, Sales, or Business Development required?',
-			a: "No. We look for potential, mindset, grit, and the ability to think outside the box. The 4-week intensive sprint is designed to get you market-ready."
+			q: "Can I apply if I'm over 30 years old?",
+			a: 'No (in most cases), however we are willing to make an exception for an exceptional applicant.'
 		},
 		{
-			q: 'Can I do this alongside my degree or another job?',
-			a: "Only if your current commitments are fully remote and you're a productivity monster. Otherwise, no. This is fully on-site in Ljubljana."
+			q: 'Is prior experience in Marketing, Sales and Business development required to apply?',
+			a: 'No. We look for potential, mindset, grit and your ability to think outside-the-box and we prioritize those more than prior technical mastery. The first 4-week intensive sprint of the Academy is designed to get you "market-ready" and able to tackle any problem that might come your way.'
+		},
+		{
+			q: 'Can I do this alongside my university degree or another job?',
+			a: 'Only if your current commitments are completely remote and you happen to be a productivity monster fueled by espresso and pure ambition. Otherwise, no. This is not a side-hustle. You are expected to be fully on-site in Ljubljana.'
 		},
 		{
 			q: 'What kind of companies will I be working with?',
-			a: 'Dynamic companies across various industries that align with our core value of empowering young talent — ready to give you real responsibility, high-stakes problems, and a seat at the table from day one.'
+			a: "We partner with dynamic companies across a variety of industries. You won't be a forgotten cog in a massive corporate machine. We specifically select companies that align with our core value of empowering young talent meaning they are ready to give you real responsibility, high-stakes problems, and a seat at the table from day one."
 		},
 		{
 			q: 'What happens if there is no fit with the company?',
-			a: "You retain your scholarship and status as an accepted candidate. The moment a new spot opens in our partner network, you'll be next in line."
+			a: "If there's no fit with the host company, no worries. In that unfortunate case, you retain your scholarship and status as an accepted candidate. The second a new spot opens up in our network of partner companies, you'll be next in line to claim it."
 		}
 	];
 </script>
@@ -158,7 +154,7 @@
 			step into a real business, tackle live company challenges, and hardwire your skills through actual execution.
 		</p>
 		<p class="mx-auto mb-6 max-w-xl text-[0.9375rem] font-medium text-[var(--gs-primary)]">
-			Shapers Academy is not only here to help you develop and fast-track your career — it's here to help you shape it.
+			Shapers Academy is not only here to help you develop and fast-track your career. It's here to help you shape it.
 		</p>
 
 		<a
@@ -181,13 +177,8 @@
 		<div use:inView>
 			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">The offer</p>
 			<h2 class="text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Not your typical internship</h2>
-			<p class="mt-3 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
-				We've all seen it: brilliant young people who are theoretically overqualified but lack the raw
-				experience and high-level skills that top-tier companies actually demand.
-			</p>
 			<p class="mt-2 mb-8 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
-				The program is designed to allow selected participants to completely bypass the entry-level
-				struggle — or in some cases, completely switch career paths.
+				Shapers Academy is designed to allow selected participants to completely bypass the entry-level struggle or in some cases, completely switch career paths.
 			</p>
 		</div>
 
@@ -215,10 +206,6 @@
 				</div>
 			</div>
 		</div>
-
-		<p use:inView={{ delay: 80 }} class="mt-8 text-center text-[0.9375rem] font-medium text-[var(--gs-primary)]">
-			By the time you finish the 6-month paid internship, you'll have a proven track record of international success.
-		</p>
 	</div>
 </section>
 
@@ -233,8 +220,6 @@
 				Only 12 scholarships are available. Why 12? Because we're only looking for the top 1% of applicants.
 				<br>
 				During your internship, you'll receive a monthly stipend designed to fully cover your living expenses in Ljubljana, allowing you to focus entirely on gaining experience and accelerating your career.
-				<br>
-				Focus areas are marketing, sales, and business development — but the skills you learn are highly transferable and applicable across various roles and industries.
 			</p>
 		</div>
 		<div class="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -276,7 +261,7 @@
 				<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">Your base</p>
 				<h2 class="text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Ljubljana, Slovenia</h2>
 				<p class="mt-3 mb-7 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
-					Slovenia's capital sits at the centre of Europe — 2 hours from Vienna, Venice, and Zagreb.
+					Slovenia's capital sits at the centre of Europe, 2 hours from Vienna, Venice, and Zagreb.
 					Compact, walkable, and cosmopolitan, with a vibrant young professional scene and a cost of
 					living that lets your stipend go further.
 				</p>
@@ -337,8 +322,8 @@
 					logistics, and housing on your own. Not this one.
 				</p>
 				<p class="mb-8 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
-					When you get selected, <span class="font-medium text-slate-800">Global Shapers Ljubljana</span>
-					— A global network of young leaders — steps in as your
+					When you get selected, <span class="font-medium text-slate-800">Global Shapers Ljubljana</span>,
+					a global network of young leaders, steps in as your
 					immediate local community.
 				</p>
 			</div>
@@ -348,13 +333,6 @@
 						<div class="h-full rounded-xl border border-slate-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
 							<p class="mb-2 text-sm font-semibold text-[var(--gs-primary)]">{card.title}</p>
 							<p class="text-[0.8125rem] leading-relaxed text-slate-600">{card.body}</p>
-							{#if card.tag}
-								<span
-									class="mt-3 inline-block rounded-full border border-green-100 bg-green-50 px-3 py-0.5 text-[0.6875rem] font-medium text-green-700"
-								>
-									{card.tag}
-								</span>
-							{/if}
 						</div>
 					</div>
 				{/each}
