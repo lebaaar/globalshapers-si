@@ -145,11 +145,6 @@
 
 <section class="bg-[linear-gradient(to_bottom,#dbeafe_0%,#eff6ff_40%,#fff_100%)] px-6 pb-20 pt-28 text-center md:pt-32">
 	<div class="hero-in mx-auto max-w-3xl">
-		<div class="mb-7 flex flex-wrap items-center justify-center gap-2">
-			<span class="inline-flex items-center rounded-full border-[0.5px] border-[#bfdbfe] bg-white px-[13px] py-1 text-xs font-medium text-blue-800">World Economic Forum Network</span>
-			<span class="inline-flex items-center rounded-full border-[0.5px] border-[#bfdbfe] bg-white px-[13px] py-1 text-xs font-medium text-blue-800">Fully funded scholarship</span>
-			<span class="inline-flex items-center rounded-full border-[0.5px] border-[#bfdbfe] bg-white px-[13px] py-1 text-xs font-medium text-blue-800">Ljubljana, Slovenia</span>
-		</div>
 
 		<h1 class="mb-5 text-4xl font-semibold leading-[1.15] tracking-tight text-[var(--gs-primary)] md:text-[2.75rem]">
 			Shapers Academy – International career accelerator for the <span class="text-[var(--gs-accent)]">top 1%</span>
@@ -343,7 +338,7 @@
 				</p>
 				<p class="mb-8 max-w-3xl text-[0.9375rem] leading-relaxed text-slate-600">
 					When you get selected, <span class="font-medium text-slate-800">Global Shapers Ljubljana</span>
-					— part of the World Economic Forum's global network of young leaders — steps in as your
+					— A global network of young leaders — steps in as your
 					immediate local community.
 				</p>
 			</div>
