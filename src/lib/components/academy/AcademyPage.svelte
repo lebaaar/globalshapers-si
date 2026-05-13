@@ -3,8 +3,9 @@
 	import { slide } from 'svelte/transition';
 	import { inView } from '$lib/actions/animate.js';
 
-	import oldTown from '$lib/assets/old-town.jpg';
-	import gas25 from '$lib/assets/gas25.webp';
+	import ljCenter from '$lib/assets/lj-center.jpeg';
+	import ljCity from '$lib/assets/lj-city.jpeg';
+	import aleja from '$lib/assets/aleja.jpeg';
 	import gas252 from '$lib/assets/gas252.webp';
 	import poletna from '$lib/assets/poletna_sola.webp';
 	import delavnice from '$lib/assets/delavnice_dogodki.webp';
@@ -237,12 +238,12 @@
 
 		<div class="mt-8 grid gap-4 md:grid-cols-2">
 			<div use:inView={{ delay: 0 }}>
-				<div class="h-full rounded-xl border border-green-200 bg-[#f5fef8] p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
-					<p class="mb-4 text-xs font-semibold uppercase tracking-wide text-green-600">You will</p>
+				<div class="h-full rounded-xl p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg" style="background:var(--gs-positive-bg); border:1px solid var(--gs-positive-border)">
+					<p class="mb-4 text-xs font-semibold uppercase tracking-wide text-white" >You will</p>
 					{#each willItems as item (item)}
 						<div class="flex gap-3 py-3 last:pb-0">
-							<span class="mt-0.5 shrink-0 text-sm text-green-500">✓</span>
-							<p class="text-[0.8125rem] leading-relaxed text-slate-700">{item}</p>
+							<span class="mt-0.5 shrink-0 text-sm text-white">✓</span>
+							<p class="text-[0.8125rem] leading-relaxed text-white">{item}</p>
 						</div>
 					{/each}
 				</div>
@@ -330,9 +331,9 @@
 		</div>
 	</div>
 	<div class="grid grid-cols-2 gap-px bg-slate-200 md:grid-cols-3">
-		<img src={oldTown} alt="Ljubljana old town" class="aspect-[4/3] w-full object-cover" loading="lazy" />
-		<img src={gas25} alt="Shapers program in Ljubljana" class="aspect-[4/3] w-full object-cover" loading="lazy" />
-		<img src={gas252} alt="Global Shapers Ljubljana" class="col-span-2 aspect-[2/1] w-full object-cover md:col-span-1 md:aspect-[4/3]" loading="lazy" />
+		<img src={ljCenter} alt="Ljubljana center" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+		<img src={ljCity} alt="Ljubljana city" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+		<img src={aleja} alt="Aleja street" class="col-span-2 aspect-[2/1] w-full object-cover md:col-span-1 md:aspect-[4/3]" loading="lazy" />
 	</div>
 </section>
 
@@ -346,19 +347,13 @@
 		</div>
 		<div class="max-w-3xl">
 			{#each steps as step, i (step.n)}
-				<div use:inView={{ delay: i * 80 }} class="flex gap-5 py-6">
-					{#if step.final}
-						<div class="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-600 text-base font-bold text-white shadow-[0_0_20px_rgba(30,64,175,0.55)]">
-							{step.n}
-						</div>
-					{:else}
-						<div
-							class="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-[0.8125rem] font-semibold text-white"
-							style="background-color: {['#93c5fd','#60a5fa','#3b82f6'][i]}"
-						>
-							{step.n}
-						</div>
-					{/if}
+				<div use:inView={{ delay: i * 80 }} class="flex gap-8 py-6">
+					<div
+						class="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white {step.final ? 'shadow-[0_0_20px_rgba(30,64,175,0.55)]' : ''}"
+						style="background-color: {step.final ? '#2563eb' : ['#93c5fd','#60a5fa','#3b82f6'][i]}"
+					>
+						{step.n}
+					</div>
 					<div>
 						<p class="mb-1.5 text-sm font-semibold text-[var(--gs-primary)]">
 							{step.title}
@@ -439,6 +434,7 @@
 					Reserve your spot →
 				</a>
 			</div>
+			<!-- TODO: Replace with webinar.jpg once available -->
 			<div class="shrink-0 md:w-80">
 				<img src={webinar} alt="Live webinar" class="h-full min-h-[220px] w-full rounded-md object-cover" loading="lazy" />
 			</div>

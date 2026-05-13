@@ -11,6 +11,9 @@
 	--gs-text-secondary: #4b5563;
 	--gs-text-muted: #6b7280;
 	--gs-bg-alt: #f8fafc;
+	--gs-positive-bg: #3b82f6;
+	--gs-positive-border: #2563eb;
+	--gs-positive-muted: #93c5fd;
 }
 
 /* ── Scroll reveal ─────────────────────────────────────────────────────── */
