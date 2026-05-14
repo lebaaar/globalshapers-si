@@ -61,6 +61,17 @@
 	const timeLeft = $derived(getTimeLeft(ACADEMY_DEADLINE));
 	const nextWebinar = $derived(WEBINAR_DATES.find(d => d > now) ?? null);
 
+	let ursakSection: HTMLElement;
+	let ursakVisible = $state(false);
+	$effect(() => {
+		if (!ursakSection) return;
+		const obs = new IntersectionObserver(([e]) => {
+			if (e.isIntersecting) { ursakVisible = true; obs.disconnect(); }
+		}, { threshold: 0.4 });
+		obs.observe(ursakSection);
+		return () => obs.disconnect();
+	});
+
 	function formatWebinarDate(d: Date): string {
 		if (d === nextWebinar) {
 			return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' });
@@ -268,43 +279,74 @@
 
 <section class="px-6 py-20">
 	<div class="mx-auto max-w-4xl">
+		<div class="mb-10 flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
+			<div use:inView>
+				<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">Overview</p>
+				<h2 class="mb-4 text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Programme at a glance</h2>
+				<p class="max-w-2xl text-[0.9375rem] leading-relaxed text-slate-500">
+					A fully funded scholarship combining a 4-week intensive skill sprint with a 6-month paid internship in Ljubljana. You'll work on real marketing, sales, and business development challenges at a partner company. Only 12 scholarships are awarded, going to the top 1% of applicants.
+				</p>
+			</div>
+
+			{#if timeLeft}
+				<div use:inView={{ delay: 100 }} class="shrink-0">
+					<p class="mb-3 text-[0.6rem] font-semibold uppercase tracking-widest text-slate-400">Applications close in</p>
+					<div class="flex gap-6">
+						{#each [{ v: timeLeft.days, l: 'days' }, { v: timeLeft.hours, l: 'hrs' }, { v: timeLeft.minutes, l: 'min' }, { v: timeLeft.seconds, l: 'sec' }] as unit (unit.l)}
+							<div>
+								<p class="text-xl font-bold tabular-nums text-[var(--gs-accent)]">{pad(unit.v)}</p>
+								<p class="text-[0.6rem] font-semibold uppercase tracking-widest text-slate-400">{unit.l}</p>
+							</div>
+						{/each}
+					</div>
+				</div>
+			{:else}
+				<p class="shrink-0 text-sm font-semibold text-red-500">Applications closed</p>
+			{/if}
+		</div>
+
+		<div use:inView={{ delay: 60 }} class="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-slate-100 bg-slate-100 sm:grid-cols-4">
+			{#each specs as spec (spec.label)}
+				<div class="bg-white px-6 py-7 transition-colors duration-200 hover:bg-blue-50/60">
+					<p class="mb-2 text-[0.6rem] font-semibold uppercase tracking-widest text-slate-400">{spec.label}</p>
+					<p class="whitespace-pre-line text-sm font-semibold leading-snug text-[var(--gs-primary)]">{spec.value}</p>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
+
+<div class="h-px bg-slate-200"></div>
+
+<section class="px-6 py-20">
+	<div class="mx-auto max-w-4xl">
 		<div use:inView>
-			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">Overview</p>
-			<h2 class="mb-8 text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Programme at a glance</h2>
+			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">Your tutor</p>
+			<h2 class="mb-8 text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Meet Urša Kamenik</h2>
 		</div>
 		<div use:inView={{ delay: 80 }} class="overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm">
 			<div class="flex flex-col md:flex-row">
-				<div class="shrink-0 md:w-96">
+				<div class="shrink-0 md:w-80">
 					<img src={ursa} alt="Urša Kamenik" class="h-64 w-full object-cover object-top md:h-full" />
 				</div>
-				<div class="flex flex-1 flex-col justify-between p-8">
+				<div bind:this={ursakSection} class="flex flex-1 flex-col justify-between p-8" class:hl-active={ursakVisible}>
 					<div>
+						<p class="mb-0.5 text-lg font-semibold text-[var(--gs-primary)]">Urša Kamenik</p>
+						<p class="mb-5 text-sm font-medium text-slate-400">Business Consultant & Mentor · Head of Sales, Erudio Group</p>
 						<p class="mb-6 text-[0.9375rem] leading-relaxed text-slate-600">
-							A fully funded scholarship combining a 4-week intensive skill sprint with a 6-month paid internship in Ljubljana. You'll work on real marketing, sales, and business development challenges at a partner company. Only 12 scholarships are awarded, going to the top 1% of applicants.
+							Urša holds <span class="hl hl-1">two master's degrees</span> in International Business Economics and Analytical Philosophy. As Director of Ypsilon Institute she <span class="hl hl-2">scaled the team from 2 to 12</span> and grew funding by 85%.
+							<span class="mt-3 block">
+								She has led <span class="hl hl-3">200+ projects</span>, delivered <span class="hl hl-4">150+ strategic consulting sessions</span>, and built the <span class="italic">Back to the Roots</span> programme, where she guided <span class="hl hl-5">32+ clients</span> through career pivots and personal transformation.
+							</span>
 						</p>
-						<dl class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
-							{#each specs as spec (spec.label)}
-								<div>
-									<dt class="text-[0.6875rem] font-semibold uppercase tracking-wide text-slate-400">{spec.label}</dt>
-									<dd class="mt-0.5 whitespace-pre-line text-sm font-medium text-[var(--gs-primary)]">{spec.value}</dd>
-								</div>
-							{/each}
-						</dl>
 					</div>
 					<div class="mt-6 border-t border-slate-100 pt-5">
-						<p class="mb-3 text-[0.6875rem] font-semibold uppercase tracking-wide text-slate-400">Applications close in</p>
-						{#if timeLeft}
-							<div class="flex gap-5">
-								{#each [{ v: timeLeft.days, l: 'days' }, { v: timeLeft.hours, l: 'hrs' }, { v: timeLeft.minutes, l: 'min' }, { v: timeLeft.seconds, l: 'sec' }] as unit (unit.l)}
-									<div class="text-center">
-										<p class="text-2xl font-bold tabular-nums text-[var(--gs-primary)]">{pad(unit.v)}</p>
-										<p class="text-[0.625rem] font-semibold uppercase tracking-wide text-slate-400">{unit.l}</p>
-									</div>
-								{/each}
-							</div>
-						{:else}
-							<p class="text-sm font-semibold text-red-500">Applications closed</p>
-						{/if}
+						<p class="mb-3 text-[0.6875rem] font-semibold uppercase tracking-wide text-slate-400">Expertise</p>
+						<div class="flex flex-wrap gap-2">
+							{#each ['Business development', 'Market expansion', 'Strategic consulting', 'Sales strategy', 'Market analysis', 'Team leadership', 'Event management'] as tag (tag)}
+								<span class="inline-flex items-center rounded-full border-[0.5px] border-[#bfdbfe] bg-blue-50 px-[10px] py-0.5 text-xs font-medium text-blue-800">{tag}</span>
+							{/each}
+						</div>
 					</div>
 				</div>
 			</div>
@@ -547,6 +589,21 @@
 </div>
 
 <style>
+	.hl {
+		background-image: linear-gradient(#2563eb, #2563eb);
+		background-repeat: no-repeat;
+		background-size: 0% 2px;
+		background-position: 0 100%;
+		padding-bottom: 1px;
+		transition: background-size 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.hl-active .hl   { background-size: 100% 2px; }
+	.hl-active .hl-1 { transition-delay: 0.15s; }
+	.hl-active .hl-2 { transition-delay: 0.75s; }
+	.hl-active .hl-3 { transition-delay: 1.35s; }
+	.hl-active .hl-4 { transition-delay: 1.95s; }
+	.hl-active .hl-5 { transition-delay: 2.55s; }
+
 	.logo-carousel-mask {
 		-webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 		mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
