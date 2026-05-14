@@ -331,9 +331,9 @@
 		</div>
 	</div>
 	<div class="grid grid-cols-2 gap-px bg-slate-200 md:grid-cols-3">
-		<img src={ljCenter} alt="Ljubljana center" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+		<img src={aleja} alt="Ljubljana center" class="aspect-[4/3] w-full object-cover" loading="lazy" />
 		<img src={ljCity} alt="Ljubljana city" class="aspect-[4/3] w-full object-cover" loading="lazy" />
-		<img src={aleja} alt="Aleja street" class="col-span-2 aspect-[2/1] w-full object-cover md:col-span-1 md:aspect-[4/3]" loading="lazy" />
+		<img src={ljCenter} alt="Aleja street" class="col-span-2 aspect-[2/1] w-full object-cover md:col-span-1 md:aspect-[4/3]" loading="lazy" />
 	</div>
 </section>
 

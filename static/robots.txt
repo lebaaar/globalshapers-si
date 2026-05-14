@@ -1,4 +1,3 @@
-# allow crawling everything by default
 User-agent: *
 Disallow:
-Sitemap: https://globalshapers.si/sitemap.xml
+Sitemap: https://globalshapers-si.pages.dev/sitemap.xml
