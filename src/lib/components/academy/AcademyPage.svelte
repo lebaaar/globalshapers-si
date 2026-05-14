@@ -16,6 +16,7 @@
 
 	import akrapovic from '$lib/assets/logos/akrapovic-logo.png';
 	import eye from '$lib/assets/logos/eye-logo.png';
+	import autoBrief from '$lib/assets/logos/autobrief-logo.jpeg';
 	import gatom from '$lib/assets/logos/gatom-logo.png';
 	import imactHub from '$lib/assets/logos/imact-hub-logo.png';
 	import popri from '$lib/assets/logos/popri-logo.png';
@@ -24,7 +25,7 @@
 	import wef from '$lib/assets/logos/wef-logo.png';
 	import xod from '$lib/assets/logos/xod-logo.webp';
 
-	const logos = [akrapovic, eye, gatom, imactHub, popri, preskok, tplj, wef, xod];
+	const logos = [akrapovic, eye, autoBrief, gatom, imactHub, popri, preskok, tplj, wef, xod];
 	import { FORM_URL, WEBINAR_URL, WHATSAPP_URL, ACADEMY_DEADLINE, WEBINAR_DATES } from '$lib/constants';
 
 	let heroCta: HTMLAnchorElement;
