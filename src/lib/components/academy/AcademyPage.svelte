@@ -73,10 +73,7 @@
 	});
 
 	function formatWebinarDate(d: Date): string {
-		if (d === nextWebinar) {
-			return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' });
-		}
-		return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+		return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' }) + ' CET';
 	}
 
 	const willItems = [
