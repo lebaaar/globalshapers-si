@@ -94,7 +94,7 @@
 		{ label: 'Location', value: 'Ljubljana, Slovenia' },
 		{ label: 'Academy sprint', value: 'Jul 1 – Aug 1, 2026\n4 weeks, on-site' },
 		{ label: 'Internship', value: 'Jul 1 – Jan 31, 2027\non-site' },
-		{ label: 'Who can apply', value: 'EU, UK, USA, Canada\nAges 18–30' },
+		{ label: 'Who can apply', value: 'EU, UK, USA, Canada, Singapore\nAges 18–30' },
 	];
 
 	const steps = [
@@ -194,7 +194,7 @@
 <svelte:head>
 	<meta
 		name="description"
-		content="A fully funded 4-week skill sprint + 6-month paid internship in Ljubljana. Only 12 spots. Applications close May 20, 2026."
+		content="A fully funded 4-week skill sprint + 6-month paid internship in Ljubljana. Only 12 spots available."
 	/>
 </svelte:head>
 
@@ -225,9 +225,9 @@
 				rel="noopener noreferrer"
 				class="inline-block rounded-lg bg-[var(--gs-accent)] px-9 py-[13px] text-[0.9375rem] font-semibold text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(37,99,235,0.45)]"
 			>
-				Apply for a scholarship →
+				Claim your spot
 			</a>
-			<p class="mt-4 mb-8 text-sm text-slate-500">12 spots available · Applications close May 20, 2026</p>
+			<p class="mt-4 mb-8 text-sm text-slate-500">12 spots available · Applications close {ACADEMY_DEADLINE.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
 		</div>
 
 		<div class="mt-auto flex justify-center">
@@ -523,7 +523,7 @@
 			<h2 class="mb-3 text-3xl font-semibold tracking-tight text-white">
 				12 spots. One shot at the top 1%.
 			</h2>
-			<p class="mb-6 text-[0.9375rem] text-blue-300">Applications close May 20, 2026.</p>
+			<p class="mb-6 text-[0.9375rem] text-blue-300">Applications close {ACADEMY_DEADLINE.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
 
 			{#if timeLeft}
 				<div class="mb-8 flex justify-center gap-6">
@@ -543,7 +543,7 @@
 				rel="noopener noreferrer"
 				class="inline-block rounded-lg bg-white px-9 py-3.5 text-[0.9375rem] font-semibold text-blue-900 transition-opacity hover:opacity-90"
 			>
-				Apply for scholarship →
+				Apply now →
 			</a>
 		</div>
 
@@ -585,7 +585,7 @@
 		rel="noopener noreferrer"
 		class="block w-full rounded-lg bg-[var(--gs-accent)] py-3 text-center text-sm font-semibold text-white transition-opacity hover:opacity-90"
 	>
-		Apply now
+		Claim your spot
 	</a>
 </div>
 
