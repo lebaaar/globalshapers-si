@@ -334,10 +334,11 @@
 						<p class="mb-0.5 text-lg font-semibold text-[var(--gs-primary)]">Urša Kamenik</p>
 						<p class="mb-5 text-sm font-medium text-slate-400">Business Consultant & Mentor · Head of Sales, Erudio Group</p>
 						<p class="mb-6 text-[0.9375rem] leading-relaxed text-slate-600">
-							Urša holds <span class="hl hl-1">two master's degrees</span> in International Business Economics and Analytical Philosophy. As Director of Ypsilon Institute she <span class="hl hl-2">scaled the team from 2 to 12</span> and grew funding by 85%.
-							<span class="mt-3 block">
-								She has led <span class="hl hl-3">200+ projects</span>, delivered <span class="hl hl-4">150+ strategic consulting sessions</span>, and built the <span class="italic">Back to the Roots</span> programme, where she guided <span class="hl hl-5">32+ clients</span> through career pivots and personal transformation.
-							</span>
+							Urša is a master strategist in <span class="hl hl-1">business development</span> and <span class="hl hl-2">market expansion</span>, leading initiatives to propel businesses into new markets and optimize their operational frameworks.
+							<br>
+							<br>
+							With over <span class="hl hl-3">200 projects</span>, 150+ strategic consulting sessions, and <span class="hl hl-5">32+ clients</span> guided through her <span class="italic">Back to the Roots</span> programme, she navigates complex business environments effectively.
+							Fluent in <span class="hl hl-6">6 languages</span> with <span class="hl hl-7">two master's</span> degrees, she brings a truly global perspective.
 						</p>
 					</div>
 					<div class="mt-6 border-t border-slate-100 pt-5">
@@ -595,7 +596,7 @@
 		background-size: 0% 2px;
 		background-position: 0 100%;
 		padding-bottom: 1px;
-		transition: background-size 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: background-size 0.85s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 	.hl-active .hl   { background-size: 100% 2px; }
 	.hl-active .hl-1 { transition-delay: 0.15s; }
@@ -603,6 +604,8 @@
 	.hl-active .hl-3 { transition-delay: 1.35s; }
 	.hl-active .hl-4 { transition-delay: 1.95s; }
 	.hl-active .hl-5 { transition-delay: 2.55s; }
+	.hl-active .hl-6 { transition-delay: 3.15s; }
+	.hl-active .hl-7 { transition-delay: 3.75s; }
 
 	.logo-carousel-mask {
 		-webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
