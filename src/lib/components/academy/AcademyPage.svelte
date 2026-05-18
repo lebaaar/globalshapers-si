@@ -321,7 +321,9 @@
 <section class="px-6 py-20">
 	<div class="mx-auto max-w-4xl">
 		<div use:inView>
-			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">Your tutor</p>
+			<p class="mb-[10px] text-[11px] font-semibold uppercase tracking-[0.09em] text-[var(--gs-accent)]">
+				This year's expert
+			</p>
 			<h2 class="mb-8 text-2xl font-semibold leading-[1.25] tracking-[-0.01em] text-[var(--gs-primary)]">Meet Urša Kamenik</h2>
 		</div>
 		<div use:inView={{ delay: 80 }} class="overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-sm">
