@@ -14,7 +14,7 @@
 	import globe from '$lib/assets/globe.png';
 	import ursa from '$lib/assets/ursa-kamenik.jpg'
 	import bled from '$lib/assets/bled.webp';
-	import portoroz from '$lib/assets/portoroz.webp';
+	import portoroz from '$lib/assets/portoroz.avif';
 	import zajamniki from '$lib/assets/zajamniki.webp';
 
 	import akrapovic from '$lib/assets/logos/akrapovic-logo.png';
@@ -393,8 +393,8 @@
 </section>
 <div class="grid grid-cols-2 gap-px bg-slate-200 md:grid-cols-3">
 	<img src={bled} alt="Bled" class="aspect-4/3 w-full object-cover" loading="lazy" />
-	<img src={portoroz} alt="Portorož" class="aspect-4/3 w-full object-cover" loading="lazy" />
-	<img src={zajamniki} alt="Zajamniki" class="col-span-2 aspect-2/1 w-full object-cover md:col-span-1 md:aspect-4/3" loading="lazy" />
+	<img src={zajamniki} alt="Zajamniki" class="aspect-4/3 w-full object-cover" loading="lazy" />
+	<img src={portoroz} alt="Portorož" class="col-span-2 aspect-2/1 w-full object-cover md:col-span-1 md:aspect-4/3" loading="lazy" />
 </div>
 
 <div class="h-px bg-slate-200"></div>
