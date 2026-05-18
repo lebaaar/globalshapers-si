@@ -335,11 +335,13 @@
 						<p class="mb-0.5 text-lg font-semibold text-[var(--gs-primary)]">Urša Kamenik</p>
 						<p class="mb-5 text-sm font-medium text-slate-400">Business Consultant & Mentor · Head of Sales, Erudio Group</p>
 						<p class="mb-6 text-[0.9375rem] leading-relaxed text-slate-600">
-							Urša is a master strategist in <span class="hl hl-1">business development</span> and <span class="hl hl-2">market expansion</span>, leading initiatives to propel businesses into new markets and optimize their operational frameworks.
+							Urša is a multi-time founder, a master strategist in <span class="hl hl-1">business development</span> and <span class="hl hl-2">market expansion</span>, leading initiatives to propel businesses into new markets and optimize their operational frameworks.
 							<br>
 							<br>
-							With over <span class="hl hl-3">200 projects</span>, 150+ strategic consulting sessions, and <span class="hl hl-5">32+ clients</span> guided through her <span class="italic">Back to the Roots</span> programme, she navigates complex business environments effectively.
-							Fluent in <span class="hl hl-6">6 languages</span> with <span class="hl hl-7">two master's</span> degrees, she brings a truly global perspective.
+							With over <span class="hl hl-3">200 projects</span>, 150+ strategic consulting sessions, and <span class="hl hl-5">32+ clients</span> guided through her <span class="italic">Back to the Roots</span> programme, she navigates complex business environments regularly.
+							<br>
+							<br>
+							Fluent in <span class="hl hl-6">6 languages</span> with <span class="hl hl-7">two master's degrees</span>, she brings the global perspective needed to get you to the next level.
 						</p>
 					</div>
 					<div class="mt-6 border-t border-slate-100 pt-5">
