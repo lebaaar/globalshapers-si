@@ -3,7 +3,7 @@ export const site = {
 	description:
 		'Global Shapers Slovenia — programs, academy, events and community for young changemakers.',
     url: 'https://globalshapers-si.pages.dev',
-    contactEmail: 'globalshapersljubljana@gmail.com',
+    contactEmail: 'info@globalshapers.si',
     logo: '/shapers-logo.png'
 };
 

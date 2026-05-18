@@ -27,6 +27,7 @@
 
 	const logos = [akrapovic, eye, autoBrief, gatom, imactHub, popri, preskok, tplj, wef, xod];
 	import { FORM_URL, WEBINAR_URL, WHATSAPP_URL, ACADEMY_DEADLINE, WEBINAR_DATES } from '$lib/constants';
+	import { site } from '$lib/site';
 
 	let heroCta: HTMLAnchorElement;
 	let heroCtaVisible = $state(true);
@@ -199,7 +200,7 @@
 	<div class="hero-in mx-auto flex w-full max-w-3xl flex-1 flex-col">
 		<div>
 			<h1 class="mb-5 text-4xl font-semibold leading-[1.15] tracking-tight text-[var(--gs-primary)] md:text-[2.75rem]">
-				International career accelerator for the <span class="text-[var(--gs-accent)]">top 1%</span>
+				International career accelerator for the <span class="text-[var(--gs-accent)] drop-shadow-[0_0_10px_color-mix(in_srgb,var(--gs-accent)_50%,transparent)]">top 1%</span>
 			</h1>
 
 			<p class="mx-auto mb-8 max-w-2xl text-lg text-[var(--gs-primary)]">
@@ -549,10 +550,10 @@
 				<p class="mb-2 text-[0.6875rem] font-semibold uppercase tracking-widest text-blue-400">Get in touch</p>
 				<p class="mb-4 text-sm leading-relaxed text-blue-200">Questions about the program? Reach out directly to our team.</p>
 				<a
-					href="mailto:globalshapersljubljana@gmail.com"
+					href={`mailto:${site.contactEmail}`}
 					class="text-sm text-white underline underline-offset-2 hover:text-blue-200"
 				>
-					globalshapersljubljana@gmail.com
+					{site.contactEmail}
 				</a>
 			</div>
 			<div>
@@ -616,10 +617,6 @@
 
 	.carousel-track {
 		animation: carousel-scroll 30s linear infinite;
-	}
-
-	.logo-carousel-mask:hover .carousel-track {
-		animation-play-state: paused;
 	}
 
 </style>
