@@ -6,7 +6,6 @@
 	import ljCenter from '$lib/assets/lj-center.jpeg';
 	import ljCity from '$lib/assets/lj-city.jpeg';
 	import aleja from '$lib/assets/aleja.jpeg';
-	import gas252 from '$lib/assets/gas252.webp';
 	import poletna from '$lib/assets/poletna_sola.webp';
 	import delavnice from '$lib/assets/delavnice_dogodki.webp';
 	import webinar from '$lib/assets/webinar.png';
@@ -438,11 +437,10 @@
 <div class="h-px bg-slate-200"></div>
 
 <section class="bg-slate-50">
-	<div class="grid grid-cols-2 gap-px bg-slate-200 md:grid-cols-4">
+	<div class="grid grid-cols-2 gap-px bg-slate-200 md:grid-cols-3">
 		<img src={delavnice} alt="Workshops and events" class="aspect-[4/3] w-full object-cover" loading="lazy" />
 		<img src={shapeTalk} alt="Shape Talk event" class="aspect-[4/3] w-full object-cover" loading="lazy" />
-		<img src={poletna} alt="Shapers summer school" class="aspect-[4/3] w-full object-cover" loading="lazy" />
-		<img src={gas252} alt="Global Shapers community" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+		<img src={poletna} alt="Shapers summer school" class="col-span-2 aspect-[2/1] w-full object-cover md:col-span-1 md:aspect-[4/3]" loading="lazy" />
 	</div>
 	<div class="px-6 py-14">
 		<div class="mx-auto max-w-4xl">
