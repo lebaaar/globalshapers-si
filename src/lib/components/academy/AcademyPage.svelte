@@ -223,7 +223,7 @@
 				href={FORM_URL}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-block rounded-lg bg-[var(--gs-accent)] px-9 py-[13px] text-[0.9375rem] font-semibold text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(37,99,235,0.45)]"
+				class="inline-block rounded-lg border border-(--gs-accent) bg-(--gs-accent) px-9 py-3.25 text-[0.9375rem] font-semibold text-white no-underline transition-all duration-200 hover:bg-white hover:text-(--gs-accent)"
 			>
 				Claim your spot
 			</a>

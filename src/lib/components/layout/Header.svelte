@@ -33,7 +33,7 @@
 				href={FORM_URL}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="hidden rounded-md bg-[var(--gs-accent)] px-4 py-2 text-[13px] font-semibold text-white no-underline transition-opacity hover:opacity-90 sm:inline-block"
+				class="hidden rounded-md border border-(--gs-accent) bg-(--gs-accent) px-4 py-2 text-[13px] font-semibold text-white no-underline transition-all duration-200 hover:bg-white hover:text-(--gs-accent) sm:inline-block"
 			>
 				Apply now →
 			</a>
